@@ -1,14 +1,10 @@
 # [Auto Attachments] (http://wordpress.org/extend/plugins/auto-attachments/)
 
-**Tags:** attachments, attachment, zip, rar, tar, tar.gz, mp3, player, flv, mp4, mpg, odf, ods, plugin, documents, excel, files, pdf, spreadsheet, text, word
-
-**License:** GPLv2 or later
-
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
-
-**Requires at least:** 3.0
-
-**Tested up to:** 3.5.1
+**Tags:** attachments, attachment, zip, rar, tar, tar.gz, mp3, player, flv, mp4, mpg, odf, ods, plugin, documents, excel, files, pdf, spreadsheet, text, word<br /> 
+**License:** GPLv2 or later<br /> 
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html<br /> 
+**Requires at least:** 3.0<br /> 
+**Tested up to:** 3.5.1<br /> 
 
 
 This plugin makes your attachments more effective. 
@@ -20,7 +16,7 @@ Auto Attachments make your attachmens more effective. When you upload an attachm
 
 **NOTICE/WARNING**: **Timthumb Deleted** . Please Set your thumbnail and big image sizes and rebuild your images once. Read [FAQ](faq/) please
 
-With new admin area (0.5.3 - [look screenshots](http://wordpress.org/extend/plugins/auto-attachments/screenshots/)) options were groupped with clean, jQuery UI based design. You can control all of plugin's options. You can select JW Player's theme, you can decide downloadble files design, list or grid. Also you can add header titles for video and audio files. You can find a .pot file in languages folder.
+With new admin area (0.5.3 - [look screenshots](#screenshots) options were groupped with clean, jQuery UI based design. You can control all of plugin's options. You can select JW Player's theme, you can decide downloadble files design, list or grid. Also you can add header titles for video and audio files. You can find a .pot file in languages folder.
 
 ## Languages Included
 + Turkish (tr_TR)	(Default)
@@ -31,8 +27,8 @@ With new admin area (0.5.3 - [look screenshots](http://wordpress.org/extend/plug
 + Slovak (sk_SK)	[Branco, Web Hosting Geeks](http://webhostinggeeks.com/blog/)
 + Hebrew (he_IL)    [oriadam](http://wordpress.org/support/profile/oriadam)
 
-More Changes? [Look At Changelog](http://wordpress.org/extend/plugins/auto-attachments/changelog/)
-Some FAQ Added [FAQ](http://wordpress.org/extend/plugins/auto-attachments/faq)
+More Changes? [Look At Changelog](#changelog)
+Some FAQ Added [FAQ](#frequently-asked-questions)
 
 Plugin is multilingual. If you translate [please contact me](mailto:info@kaisercrazy.com) and send files. Türkçe (Turkish) bilgi için : [KaiseRCrazY, Serkan Algur](http://www.kaisercrazy.com)
 
@@ -44,23 +40,19 @@ Plugin is multilingual. If you translate [please contact me](mailto:info@kaiserc
 
 ## Frequently Asked Questions 
 
-**How i upload files to my blog or posts?**
-
+**How i upload files to my blog or posts?**<br /> 
 Use WordPress media uploader when you create new page or post **(Insert / Upload button)** and upload your files. No special things required. Plugin uses wordpress attachments.
 
-**My Thumbnail is too big. How can i change size?**
-
+**My Thumbnail is too big. How can i change size?**<br /> 
 Go to Auto Attachments => Gallery Settings from accordion and set Thumnbail & Big size dimensions what px you want. And please use Rebuild Thumbnail page.
 
-**How i change file list type to multi-column (or reverse)**
-
+**How i change file list type to multi-column (or reverse)**<br /> 
 Go to Auto Attachments => Misc. Settings and if you want to use multi-column list set yes "List view of Files" (default No).
 
 ## Screenshots 
 
-* Çalışır Halde Görünüm / The Plugin area
-* Bilgi Alanları / Information Bar For videos and audio files
-* Yönetim Paneli / Admin Area
+![Çalışır Halde Görünüm / The Plugin area](http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-1.png?r=662447)
+![Yönetim Paneli / Admin Area] (http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-3.png?r=662447)
 
 ## Changelog
 
