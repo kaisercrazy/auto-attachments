@@ -3,7 +3,7 @@
 Plugin Name: Auto Attachments
 Plugin URI: http://www.kaisercrazy.com/cms-sistemleri/wordpress/auto-attachments-0-5-5.html
 Description: This plugin makes your attachments more effective. Supported attachment types are Word, Excel, Pdf, PowerPoint, zip, rar, tar, tar.gz, mp3, flv, mp4 
-Version: 0.6.7
+Version: 0.6.7.1
 Author: Serkan Algur
 Author URI: http://www.kaisercrazy.com
 License: GPLv2 or later
@@ -457,7 +457,7 @@ function get_attachment_icons( ) {
 												$fhh = $opts['fhh'];
 												$fhw = $opts['fhw'];
 												if ($opts['newwindow'] == 'yes') {
-																$target = 'target_="_blank"';
+																$target = 'target="_blank"';
 												} else {
 																$target = "";
 												}

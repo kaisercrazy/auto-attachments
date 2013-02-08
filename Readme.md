@@ -56,6 +56,9 @@ Go to Auto Attachments => Misc. Settings and if you want to use multi-column lis
 
 ## Changelog
 
+### Version 0.6.7.1
+* Bugfix for Open file in new window area (Thanks Matt!)
+
 ### Version 0.6.7
 * Category pages `is_category()` support added
 * Show on Categories Option added to Admin Area
