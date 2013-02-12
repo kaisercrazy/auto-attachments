@@ -14,7 +14,7 @@ This plugin makes your attachments more effective.
 
 Auto Attachments make your attachmens more effective. When you upload an attachment to your article, this plugin detect attachment's type and create a file list and a download area after <code>the_content</code>. And if you add some audio and video files the plugin add a jw player for this file. Plugin works with mp3, ogg, FLV, MP4 and other video & audio types (What supports by JW Player and WordPress)
 
-**NOTICE/WARNING**: **Timthumb Deleted** . Please Set your thumbnail and big image sizes and rebuild your images once. Read [FAQ](faq/) please
+**NOTICE**: Please Set your thumbnail and big image sizes and rebuild your images once. Read [FAQ](faq/) please
 
 With new admin area (0.5.3 - [look screenshots](#screenshots) options were groupped with clean, jQuery UI based design. You can control all of plugin's options. You can select JW Player's theme, you can decide downloadble files design, list or grid. Also you can add header titles for video and audio files. You can find a .pot file in languages folder.
 
@@ -26,6 +26,8 @@ With new admin area (0.5.3 - [look screenshots](#screenshots) options were group
 + Italian (it_IT)   Andrea Primiani
 + Slovak (sk_SK)	[Branco, Web Hosting Geeks](http://webhostinggeeks.com/blog/)
 + Hebrew (he_IL)    [oriadam](http://wordpress.org/support/profile/oriadam)
+
+**Note:** Translators, please update your language files. Lots of text added with 0.7.0
 
 More Changes? [Look At Changelog](#changelog)
 Some FAQ Added [FAQ](#frequently-asked-questions)
@@ -49,12 +51,25 @@ Go to Auto Attachments => Gallery Settings from accordion and set Thumnbail & Bi
 **How i change file list type to multi-column (or reverse)**<br /> 
 Go to Auto Attachments => Misc. Settings and if you want to use multi-column list set yes "List view of Files" (default No).
 
+**How i create shortcodes **<br />
+Go to Posts (or Pages) -> Create New (or Edit). You will see a new button with a paperclip. Press this button and follow the instruction.
+
 ## Screenshots 
 
 ![Çalışır Halde Görünüm / The Plugin area](http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-1.png?r=662447)
 ![Yönetim Paneli / Admin Area] (http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-3.png?r=662447)
 
 ## Changelog
+
+### Version 0.7 
+* Tested with WordPress 3.5.1. Working!
+* Admin area jQuery UI upgraded
+* Admin area jQuery Uı theme changed
+* Shortcode Panel Added
+* Shortcodes added for Images, Files, Audio files and Videos
+* Image size rebuilder code cleaned and changed some litte code
+* Some jQuery code changed
+* Tested with 3.5.1 & new shortcode panel. Working
 
 ### Version 0.6.7.1
 * Bugfix for Open file in new window area (Thanks Matt!)

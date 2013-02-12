@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Auto Attachments
-Plugin URI: http://www.kaisercrazy.com/cms-sistemleri/wordpress/auto-attachments-0-5-5.html
+Plugin URI: http://www.kaisercrazy.com/cms-sistemleri/wordpress/auto-attachments-0-7.html
 Description: This plugin makes your attachments more effective. Supported attachment types are Word, Excel, Pdf, PowerPoint, zip, rar, tar, tar.gz, mp3, flv, mp4 
-Version: 0.6.7.1
+Version: 0.7
 Author: Serkan Algur
 Author URI: http://www.kaisercrazy.com
 License: GPLv2 or later
@@ -22,7 +22,10 @@ add_action('init', 'multilingual_aa');
 
 //Call Metabox
 include 'admin/metaboxes.php';
-//Call Metabox
+//Call Shortcode
+include 'admin/shortcodes.php';
+//Call Rebuild
+include 'admin/rebuild.php';
 
 //ACTIVATE (MULTISITES)
 register_activation_hook(__FILE__, 'aa_install');
@@ -109,6 +112,7 @@ function admin_aa_scripts( ) {
 				$urlp = plugins_url('/auto-attachments/includes');
 				wp_register_script('auto-attachments1', '' . $urlp . '/js/ui.ms.js', __FILE__);
 				wp_register_script('auto-attachments2', '' . $urlp . '/js/aa.js', __FILE__);
+
 				wp_enqueue_script('auto-attachments1');
 				wp_enqueue_script('auto-attachments2');
 }
@@ -123,6 +127,7 @@ function addHeaderCode( ) {
 				$opts = get_option('auto_attachments_options');
 				$urlp = plugins_url('/auto-attachments');
 				echo '<link type="text/css" rel="stylesheet" href="' . $urlp . '/a-a.css" />' . "\n";
+				echo '<script language="javascript" type="text/javascript" src="' . $urlp . '/includes/jw/swfobject.js"></script>'."\n";
 				//With 0.2.6 you can decide show or hide :)
 				if ($opts['showmp3info'] == 'no') {
 								echo '<style>div.mp3info {display:none;}</style>';
@@ -188,230 +193,6 @@ $opts = get_option('auto_attachments_options');
 add_image_size('aa_big', $opts['tbhw'], $opts['tbhh']);
 add_image_size('aa_thumb', $opts['thw'], $opts['thh'], TRUE);
 
-class aARebuild {
-	function aARebuild() {
-		add_action( 'admin_menu', array($this, 'rebuildmenu') );
-	}
-	function rebuildmenu() {
-		add_submenu_page('auto_attachments', __('Regen. Thumbnails', 'autoa'), __('Regen. Thumbnails', 'autoa'), 'manage_options', 'aa_regen_thumb', array($this, 'rebuildpage'));
-	}
-	function rebuildpage() {
-		$opts = get_option('auto_attachments_options');
-		$urlp = plugins_url('/auto-attachments');
-		?>
-		<style>#icon-aa {background:url('<?php echo $urlp; ?>/includes/images/32x32aa.png') no-repeat;margin-left:3px;}</style>
-		<div id="icon-aa" class="icon32" ></div><h2><?php _e('Regenerate Thumbnail', 'autoa'); ?></h2>
-		<div id="message" class="updated fade" style="display:none"></div>
-		<script type="text/javascript">
-		// <![CDATA[
-
-		function setMessage(msg) {
-			jQuery("#message").html(msg);
-			jQuery("#message").show();
-		}
-
-		function regenerate() {
-			jQuery("#_rebuild").attr("disabled", true);
-			setMessage("<p><?php _e('Reading attachments...', 'autoa') ?></p>");
-
-			inputs = jQuery( 'input:checked' );
-			var thumbnails= '';
-			if( inputs.length != jQuery( 'input[type=checkbox]' ).length ){
-				inputs.each( function(){
-					thumbnails += '&thumbnails[]='+jQuery(this).val();
-				} );
-			}
-
-			var onlyfeatured = jQuery("#onlyfeatured").attr('checked') ? 1 : 0;
-
-			jQuery.ajax({
-				url: "<?php echo admin_url('admin-ajax.php'); ?>",
-				type: "POST",
-				data: "action=ajax_thumbnail_rebuild&do=getlist&onlyfeatured="+onlyfeatured,
-				success: function(result) {
-					var list = eval(result);
-					var curr = 0;
-
-					if (!list) {
-						setMessage("<?php _e('No attachments found.', 'autoa')?>");
-						jQuery("#_rebuild").removeAttr("disabled");
-						return;
-					}
-
-					function regenItem() {
-						if (curr >= list.length) {
-							jQuery("#_rebuild").removeAttr("disabled");
-							setMessage("<?php _e('Done.', 'autoa') ?>");
-							return;
-						}
-						setMessage(<?php printf( __('"Rebuilding " + %s + " of " + %s + " (" + %s + ")..."', 'autoa'), "(curr+1)", "list.length", "list[curr].title"); ?>);
-
-						jQuery.ajax({
-							url: "<?php echo admin_url('admin-ajax.php'); ?>",
-							type: "POST",
-							data: "action=ajax_thumbnail_rebuild&do=regen&id=" + list[curr].id + thumbnails,
-							success: function(result) {
-								jQuery("#thumb").show();
-								jQuery("#thumb-img").attr("src",result);
-
-								curr = curr + 1;
-								regenItem();
-							}
-						});
-					}
-
-					regenItem();
-				},
-				error: function(request, status, error) {
-					setMessage("<?php _e('Error', 'autoa') ?>" + request.status);
-				}
-			});
-		}
-
-		jQuery(document).ready(function() {
-			jQuery('#size-toggle').click(function() {
-				jQuery("#sizeselect").find("input[type=checkbox]").each(function() {
-					jQuery(this).attr("checked", !jQuery(this).attr("checked"));
-				});
-			});
-		});
-
-		// ]]>
-		</script>
-
-		<form method="post" action="" style="display:inline; float:left; padding-right:30px;">
-		    <h4><?php _e('Select which thumbnails you want to rebuild', 'autoa'); ?>:</h4>
-			<a href="javascript:void(0);" id="size-toggle"><?php _e('Toggle all', 'autoa'); ?></a>
-			<div id="sizeselect">
-			<input type="checkbox" name="thumbnails[]" id="sizeselect" checked="checked" value="aa_thumb" />
-				<label>
-					<em>aa_thumb</em>
-					&nbsp;(<?php echo $opts['thw'] ?>x<?php echo $opts['thh'] ?>
-					<?php _e('cropped', 'autoa'); ?>)
-				</label><br />
-			<input type="checkbox" name="thumbnails[]" id="sizeselect" checked="checked" value="aa_big" />
-				<label>
-					<em>aa_big</em>
-					&nbsp;(<?php echo $opts['tbhw'] ?>x<?php echo $opts['tbhh'] ?>)
-				</label>
-			</div>
-			<p><?php _e("Note: If you've changed the dimensions of your thumbnails, existing thumbnail images will not be deleted.",
-			'autoa'); ?></p>
-			<input type="button" onClick="javascript:regenerate();" class="button"
-			       name="_rebuild" id="_rebuild"
-			       value="<?php _e( 'Rebuild All Thumbnails', 'autoa' ) ?>" />
-			<br />
-		</form>
-		<?php
-	}
-
-
-};
-
-
-function ajax_thumbnail_rebuild_ajax() {
-	global $wpdb;
-	
-	$action = $_POST["do"];
-	$thumbnails = isset( $_POST['thumbnails'] )? $_POST['thumbnails'] : NULL;
-	$onlyfeatured = isset( $_POST['onlyfeatured'] ) ? $_POST['onlyfeatured'] : 0;
-
-	if ($action == "getlist") {
-			$attachments =& get_children( array(
-				'post_type' => 'attachment',
-				'post_mime_type' => 'image',
-				'numberposts' => -1,
-				'post_status' => null,
-				'post_parent' => null, // any parent
-				'output' => 'object',
-			) );
-			foreach ( $attachments as $attachment ) {
-			    $res[] = array('id' => $attachment->ID, 'title' => $attachment->post_title);
-			}
-
-		die( json_encode($res) );
-	} else if ($action == "regen") {
-		$id = $_POST["id"];
-
-		$fullsizepath = get_attached_file( $id );
-
-		if ( FALSE !== $fullsizepath && @file_exists($fullsizepath) ) {
-			set_time_limit( 30 );
-			wp_update_attachment_metadata( $id, wp_generate_attachment_metadata_custom( $id, $fullsizepath, $thumbnails ) );
-		}
-
-		die( wp_get_attachment_thumb_url( $id ));
-	}
-}
-add_action('wp_ajax_ajax_thumbnail_rebuild', 'ajax_thumbnail_rebuild_ajax');
-
-add_action( 'plugins_loaded', create_function( '', 'global $aARebuild; $aARebuild = new aARebuild();' ) );
-
-function ajax_thumbnail_rebuild_get_sizes() {
-	global $_wp_additional_image_sizes;
-
-	foreach ( get_intermediate_image_sizes() as $s ) {
-		$sizes[$s] = array( 'name' => '', 'width' => '', 'height' => '', 'crop' => FALSE );
-
-		/* Read theme added sizes or fall back to default sizes set in options... */
-
-		$sizes[$s]['name'] = $s;
-
-		if ( isset( $_wp_additional_image_sizes[$s]['width'] ) )
-			$sizes[$s]['width'] = intval( $_wp_additional_image_sizes[$s]['width'] ); 
-		else
-			$sizes[$s]['width'] = get_option( "{$s}_size_w" );
-
-		if ( isset( $_wp_additional_image_sizes[$s]['height'] ) )
-			$sizes[$s]['height'] = intval( $_wp_additional_image_sizes[$s]['height'] );
-		else
-			$sizes[$s]['height'] = get_option( "{$s}_size_h" );
-
-		if ( isset( $_wp_additional_image_sizes[$s]['crop'] ) )
-			$sizes[$s]['crop'] = intval( $_wp_additional_image_sizes[$s]['crop'] );
-		else
-			$sizes[$s]['crop'] = get_option( "{$s}_crop" );
-	}
-
-	return $sizes;
-}
-
-function wp_generate_attachment_metadata_custom( $attachment_id, $file, $thumbnails = NULL ) {
-	$attachment = get_post( $attachment_id );
-
-	$metadata = array();
-	if ( preg_match('!^image/!', get_post_mime_type( $attachment )) && file_is_displayable_image($file) ) {
-		$imagesize = getimagesize( $file );
-		$metadata['width'] = $imagesize[0];
-		$metadata['height'] = $imagesize[1];
-		list($uwidth, $uheight) = wp_constrain_dimensions($metadata['width'], $metadata['height'], 128, 96);
-		$metadata['hwstring_small'] = "height='$uheight' width='$uwidth'";
-
-		// Make the file path relative to the upload dir
-		$metadata['file'] = _wp_relative_upload_path($file);
-
-		$sizes = ajax_thumbnail_rebuild_get_sizes();
-		$sizes = apply_filters( 'intermediate_image_sizes_advanced', $sizes );
-
-		foreach ($sizes as $size => $size_data ) {
-			if( isset( $thumbnails ) && !in_array( $size, $thumbnails ))
-				$intermediate_size = image_get_intermediate_size( $attachment_id, $size_data['name'] );
-			else
-				$intermediate_size = image_make_intermediate_size( $file, $size_data['width'], $size_data['height'], $size_data['crop'] );
-
-			if ($intermediate_size)
-				$metadata['sizes'][$size] = $intermediate_size;
-		}
-
-		// fetch additional metadata from exif/iptc
-		$image_meta = wp_read_image_metadata( $file );
-		if ( $image_meta )
-			$metadata['image_meta'] = $image_meta;
-
-	}
-
-	return apply_filters( 'wp_generate_attachment_metadata', $metadata, $attachment_id );
-}
 
 // Function Area 
 function get_attachment_icons( ) {
@@ -427,6 +208,7 @@ function get_attachment_icons( ) {
 				if ($opts['listview'] == 'yes') {
 								$aa_string .= "<ul>";
 				}
+				$ex_dosya = get_post_meta(get_the_ID(), 'ex_dosya', TRUE);
 				if ($files = get_children(array( //do only if there are attachments of these qualifications
 								'post_parent' => get_the_ID(),
 								'post_type' => 'attachment',
@@ -450,7 +232,9 @@ function get_attachment_icons( ) {
 												"application/x-compress",
 												"application/mathcad",
 												"application/postscript"
-								) //MIME Type condition (changed into this format with 0.4.1)
+								),
+								'exclude' => $ex_dosya
+								//MIME Type condition (changed into this format with 0.4.1)
 				))) {
 								foreach ($files as $file) //setup array for more than one file attachment
 												{
@@ -484,17 +268,18 @@ function get_attachment_icons( ) {
 				}
 				$aa_string .= "</div><div style='clear:both;'></div>";
 				//Audio Files
+				$ex_muz = get_post_meta(get_the_ID(), 'ex_muz', TRUE);
 				$mp3s = get_children(array( //do only if there are attachments of these qualifications
 								'post_parent' => get_the_ID(),
 								'post_type' => 'attachment',
 								'numberposts' => -1,
-								'post_mime_type' => 'audio' //MIME Type condition
+								'post_mime_type' => 'audio', //MIME Type condition
+								'exclude' => $ex_muz
 				));
 				if (!empty($mp3s)):
 								$skin = $opts['jwskin'];
 								$jhw  = $opts['jhw'];
 								$aa_string .= "<div class='dIW'><div class='mp3info'>" . $opts['mp3_listen'] . "</div><ul>";
-								$aa_string .= "<script language='javascript' type='text/javascript' src='$urlp/jw/swfobject.js'></script>";
 								foreach ($mp3s as $mp3):
 												$aa_string .= "<li>";
 												if (!empty($mp3->post_title)): //checking to make sure the post title isn't empty
@@ -517,17 +302,18 @@ function get_attachment_icons( ) {
 								$aa_string .= "</ul></div>";
 				endif;
 				//Video Support flv, mp4, etc. added with 0.2
+				$ex_vid = get_post_meta(get_the_ID(), 'ex_vid', TRUE);
 				$videoss = get_children(array( //do only if there are attachments of these qualifications
 								'post_parent' => get_the_ID(),
 								'post_type' => 'attachment',
 								'numberposts' => -1,
-								'post_mime_type' => 'video' //MIME Type condition
+								'post_mime_type' => 'video', //MIME Type condition
+								'exclude' => $ex_vid
 				));
 				if (!empty($videoss)):
 								$jhw  = $opts['jhw'];
 								$jhh  = $opts['jhh'];
 								$aa_string .= "<div class='dIW'><div class='videoinfo'>" . $opts['video_watch'] . "</div><ul>";
-								$aa_string .= "<script language='javascript' type='text/javascript' src='$urlp/jw/swfobject.js'></script>";
 								foreach ($videoss as $videos):
 												$aa_string .= "<li>";
 												if (!empty($videos->post_title)): //checking to make sure the post title isn't empty
@@ -552,12 +338,13 @@ function get_attachment_icons( ) {
 				if ($opts['galeri'] == 'yes') {
 								global $blog_id, $current_site;
 								$thumb_ID = get_post_thumbnail_id( get_the_ID());
+								$ex_rsm = get_post_meta(get_the_ID(), 'ex_rsm', TRUE);
 								if ($galeriresim = get_children(array( //do only if there are attachments of these qualifications
 												'post_parent' => get_the_ID(),
 												'post_type' => 'attachment',
 												'numberposts' => -1,
 												'post_mime_type' => 'image', //MIME Type condition
-												'exclude' => $thumb_ID
+												'exclude' => $thumb_ID.','.$ex_rsm
 								))) {
 												$aa_string .= "<div class='dIW1'><div class='galeri-".$opts['galstyle']."'>";
 												foreach ($galeriresim as $galerir) //setup array for more than one file attachment

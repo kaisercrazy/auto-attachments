@@ -2,365 +2,502 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Auto Attachments v0.6.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-01-18 15:21:03+0000\n"
-"Last-Translator: anony <oriadam@gmail.com>\n"
+"POT-Creation-Date: 2013-02-12 11:33+0200\n"
+"PO-Revision-Date: 2013-02-12 11:33+0200\n"
+"Last-Translator: Serkan Algur <info@kaisercrazy.com>\n"
 "Language-Team: \n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: Hebrew\n"
-"X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
-#: admin/admin-area.php:13
-#@ autoa
-msgid "Auto Attachments Settings Page"
-msgstr "מסך הגדרות קבצים מצורפים אוטומטית"
-
-#: admin/admin-area.php:18
-#@ autoa
-msgid "Contributor"
-msgstr "התורם"
-
-#: admin/admin-area.php:23
-#@ autoa
-msgid "Personal Blog (Turkish)"
-msgstr "בלוג אישי (תורכית)"
-
-#: admin/admin-area.php:24
-#@ autoa
-msgid "WpFunC (functions share)"
-msgstr ""
-
-#: admin/admin-area.php:25
-#@ autoa
-msgid "Facebook"
-msgstr "פייסבוק"
-
-#: admin/admin-area.php:27
-#@ autoa
-msgid "Friendfeed"
-msgstr ""
-
-#: admin/admin-area.php:28
-#@ autoa
-msgid "Email Me"
-msgstr "שלח לי מייל"
-
-#: admin/admin-area.php:34
-#@ autoa
-msgid "Preview"
-msgstr "תצוגה מקדימה"
-
-#: admin/admin-area.php:55
-#@ autoa
-msgid "<strong>Header Text Settings</strong>"
-msgstr "<b>הגדרות כותרת</b>"
-
-#: admin/admin-area.php:57
-#@ autoa
-msgid "You can now change <strong>Header Texts</strong> from here. You can localize to your language :)"
-msgstr "באפשרותך לשנות את <b>טקסט הכותרת</b> מכאן. אפשר לכתוב בעברית :)"
-
-#: admin/admin-area.php:58
-#@ autoa
-msgid "Add Header Text for Mp3 Files:"
-msgstr "הוספת כותרת לקבצי מוסיקה Mp3:"
-
-#: admin/admin-area.php:59
-#: admin/admin-area.php:61
-#: admin/admin-area.php:67
-#: admin/admin-area.php:69
-#: admin/admin-area.php:74
-#: admin/admin-area.php:76
-#: admin/admin-area.php:88
-#: admin/admin-area.php:90
-#: admin/admin-area.php:99
-#: admin/admin-area.php:101
-#: admin/admin-area.php:116
-#: admin/admin-area.php:118
-#: admin/admin-area.php:144
-#: admin/admin-area.php:146
-#: admin/admin-area.php:151
-#: admin/admin-area.php:153
-#: admin/metaboxes.php:27
-#@ default
-msgid "checked=\"checked\""
-msgstr ""
-
-#: admin/admin-area.php:60
-#: admin/admin-area.php:68
-#: admin/admin-area.php:75
-#@ autoa
-msgid "Show"
-msgstr "הצג"
-
-#: admin/admin-area.php:62
-#: admin/admin-area.php:70
-#: admin/admin-area.php:77
-#@ autoa
-msgid "Hide"
-msgstr "הסתר"
-
-#: admin/admin-area.php:66
-#@ autoa
-msgid "Add Header Text for Video Files:"
-msgstr "הוספת כותרת עבור קבצי וידאו:"
-
-#: admin/admin-area.php:73
-#@ autoa
-msgid "Title Before Attachments:"
-msgstr "כותרת לפני הקבצים המצורפים:"
-
-#: admin/admin-area.php:78
-#@ autoa
-msgid "HTML Accepted"
-msgstr "אפשר להשתמש בקוד HTML"
-
-#: admin/admin-area.php:82
-#@ autoa
-msgid "<strong>Page & Homepage Settings</strong>"
-msgstr "<b>הגדרות עמוד ועמוד הבית</b>"
-
-#: admin/admin-area.php:84
-#@ autoa
-msgid "Show on Pages"
-msgstr "הצג בעמודים"
-
-#: admin/admin-area.php:85
-#@ autoa
-msgid "With 0.6, you will have a meta box on WordPress page editing area about \"Show on Pages\" Setting. This notice will be delete with new version. "
-msgstr ""
-
-#: admin/admin-area.php:86
-#@ autoa
-msgid "Show on Homepage"
-msgstr "הצג בעמוד הראשי"
-
-#: admin/admin-area.php:87
-#@ autoa
-msgid "If you set this settings \"Yes\", attachments shown on homepage and single pages. If not attachments shown only in posts"
-msgstr "סימון של אפשרות זו יאפשר קבצים מצורפים בעמודים ועמוד הבית. אחרת, קבצים מצורפים יופיעו רק בפוסטים."
-
-#: admin/admin-area.php:89
-#: admin/admin-area.php:100
-#: admin/admin-area.php:117
-#: admin/admin-area.php:145
-#: admin/admin-area.php:152
-#@ autoa
-msgid "Yes"
-msgstr "כן"
-
-#: admin/admin-area.php:91
-#: admin/admin-area.php:102
-#: admin/admin-area.php:119
-#: admin/admin-area.php:147
-#: admin/admin-area.php:154
-#@ autoa
-msgid "No"
-msgstr "לא"
-
-#: admin/admin-area.php:95
-#@ autoa
-msgid "<strong>Gallery Settings</strong>"
-msgstr "<b>אפשרויות גלריה</b>"
-
-#: admin/admin-area.php:97
-#@ autoa
-msgid "Show Gallery?"
-msgstr "הצג גלריה?"
-
-#: admin/admin-area.php:98
-#@ autoa
-msgid "You can use gallery for show your image attachments without any plugin or else :) Also if you use colorbox or any other gallery lihtbox plugin yopu can disable colorbox usage."
-msgstr "תוסף זה מאפשר ליצור גלריה יפה של קבצי התמונה המצורפים. אם התקנת colorbox או תוסף אחר מבוסס lightbox - אין בו צורך."
-
-#: admin/admin-area.php:103
-#@ autoa
-msgid "Select Gallery Color Style"
-msgstr "בחירת סגנון הגלריה"
-
-#: admin/admin-area.php:115
-#@ autoa
-msgid "Use Slimbox?"
-msgstr "שימוש ב slimbox לתצוגה יפה של התמונות?"
-
-#: admin/admin-area.php:120
-#@ autoa
-msgid "Select Slimbox Color Style"
-msgstr "בחירת סגנון slimbox"
-
-#: admin/admin-area.php:133
-#@ autoa
-msgid "Gallery Thumb Size?"
-msgstr "גודל התמונות המוקטנות בגלריה?"
-
-#: admin/admin-area.php:134
-#: admin/admin-area.php:136
-#: admin/admin-area.php:157
-#: admin/admin-area.php:186
-#@ autoa
-msgid "Width"
-msgstr "רוחב"
-
-#: admin/admin-area.php:134
-#: admin/admin-area.php:136
-#: admin/admin-area.php:157
-#: admin/admin-area.php:186
-#@ autoa
-msgid "Height"
-msgstr "גובה"
-
-#: admin/admin-area.php:135
-#@ autoa
-msgid "Gallery Big Image Size?"
-msgstr "גודל התמונה הגדולה בגלריה?"
-
-#: admin/admin-area.php:139
-#@ autoa
-msgid "<strong>Misc. Settings</strong>"
-msgstr "<b>אפשרויות כלליות</b>"
-
-#: admin/admin-area.php:141
-#@ autoa
-msgid "List View Of Files"
-msgstr "תצוגת רשימה של קבצים"
-
-#: admin/admin-area.php:142
-#@ autoa
-msgid "If you activate this option your downloadable files seen in a list view."
-msgstr "כשאפשרות זו נבחרת תוצג רשימה מסודרת של הקבצים להורדה. אחרת יופיעו אייקונים."
-
-#: admin/admin-area.php:149
-#@ autoa
-msgid "Open files in new window?"
-msgstr "פתיחת הקבצים בחלון חדש?"
-
-#: admin/admin-area.php:150
-#@ autoa
-msgid "Do you want to open files in new window?."
-msgstr "האם לפתוח את הקבצים בחלון דפדפן חדש?"
-
-#: admin/admin-area.php:156
-#@ autoa
-msgid "File Icon Size?"
-msgstr "גודל אייקון הקובץ?"
-
-#: admin/admin-area.php:158
-#@ autoa
-msgid "Jw Player Skin"
-msgstr "סגנון נגן המוסיקה/וידאו Jw"
-
-#: admin/admin-area.php:160
-#@ autoa
-msgid "You can select JW Player Skin."
-msgstr "אפשר להחליף את מראה נגן מוסיקה/וידאו Jw"
-
-#: admin/admin-area.php:184
-#@ autoa
-msgid "Jw Player Dimensions?"
-msgstr "גודל נגן המוסיקה/וידאו Jw?"
-
-#: admin/admin-area.php:185
-#@ autoa
-msgid "This dimensions actually for video player. Mp3 player will use only width."
-msgstr "הגודל הוא עבור וידאו בלבד. קבצי מוסיקה Mp3 זקוקים רק לרוחב."
-
-#: admin/admin-area.php:190
-#@ default
-msgid "Save Changes"
-msgstr ""
-
-#: admin/metaboxes.php:12
-#@ autoa
-msgid "Show Auto Attachments?"
-msgstr "הצג קבצים מצורפים אוטומטית?"
-
-#: admin/metaboxes.php:26
-#@ autoa
-msgid "If you want to show Auto Attachments on this page Check This Check Box"
-msgstr "אם ברצונך שיראו את הקבצים המצורפים (שצורפו באמצעות פלאגין זה) נא לסמן את התיבה."
-
-#: admin/metaboxes.php:28
-#@ autoa
-msgid "I Want to Show"
-msgstr "ברצוני להציג"
-
-#: auto-attachments.php:161
-#@ autoa
+# @ autoa
+#: auto-attachments.php:167
 msgid "Auto Attachments"
 msgstr "קבצים מצורפים אוטומטית"
 
-#: auto-attachments.php:179
-#@ default
+# @ default
+#: auto-attachments.php:185
 msgid "Settings saved."
 msgstr ""
 
-#: auto-attachments.php:195
-#@ autoa
+# @ autoa
+#: admin/admin-area.php:13
+msgid "Auto Attachments Settings Page"
+msgstr "מסך הגדרות קבצים מצורפים אוטומטית"
+
+# @ autoa
+#: admin/admin-area.php:18
+msgid "Contributor"
+msgstr "התורם"
+
+# @ autoa
+#: admin/admin-area.php:23
+msgid "Personal Blog (Turkish)"
+msgstr "בלוג אישי (תורכית)"
+
+# @ autoa
+#: admin/admin-area.php:24
+msgid "WpFunC (functions share)"
+msgstr ""
+
+# @ autoa
+#: admin/admin-area.php:25
+msgid "Facebook"
+msgstr "פייסבוק"
+
+# @ autoa
+#: admin/admin-area.php:27
+msgid "Friendfeed"
+msgstr ""
+
+# @ autoa
+#: admin/admin-area.php:28
+msgid "Email Me"
+msgstr "שלח לי מייל"
+
+# @ autoa
+#: admin/admin-area.php:34
+msgid "Preview"
+msgstr "תצוגה מקדימה"
+
+# @ autoa
+#: admin/admin-area.php:55
+msgid "<strong>Header Text Settings</strong>"
+msgstr "<b>הגדרות כותרת</b>"
+
+# @ autoa
+#: admin/admin-area.php:57
+msgid ""
+"You can now change <strong>Header Texts</strong> from here. You can localize "
+"to your language :)"
+msgstr "באפשרותך לשנות את <b>טקסט הכותרת</b> מכאן. אפשר לכתוב בעברית :)"
+
+# @ autoa
+#: admin/admin-area.php:58
+msgid "Add Header Text for Mp3 Files:"
+msgstr "הוספת כותרת לקבצי מוסיקה Mp3:"
+
+# @ default
+#: admin/admin-area.php:59 admin/admin-area.php:61 admin/admin-area.php:67
+#: admin/admin-area.php:69 admin/admin-area.php:74 admin/admin-area.php:76
+#: admin/admin-area.php:86 admin/admin-area.php:88 admin/admin-area.php:93
+#: admin/admin-area.php:95 admin/admin-area.php:104 admin/admin-area.php:106
+#: admin/admin-area.php:121 admin/admin-area.php:123 admin/admin-area.php:149
+#: admin/admin-area.php:151 admin/admin-area.php:156 admin/admin-area.php:158
+#: admin/metaboxes.php:27
+msgid "checked=\"checked\""
+msgstr ""
+
+# @ autoa
+#: admin/admin-area.php:60 admin/admin-area.php:68 admin/admin-area.php:75
+msgid "Show"
+msgstr "הצג"
+
+# @ autoa
+#: admin/admin-area.php:62 admin/admin-area.php:70 admin/admin-area.php:77
+msgid "Hide"
+msgstr "הסתר"
+
+# @ autoa
+#: admin/admin-area.php:66
+msgid "Add Header Text for Video Files:"
+msgstr "הוספת כותרת עבור קבצי וידאו:"
+
+# @ autoa
+#: admin/admin-area.php:73
+msgid "Title Before Attachments:"
+msgstr "כותרת לפני הקבצים המצורפים:"
+
+# @ autoa
+#: admin/admin-area.php:78
+msgid "HTML Accepted"
+msgstr "אפשר להשתמש בקוד HTML"
+
+# @ autoa
+#: admin/admin-area.php:82
+msgid "<strong>Page & Homepage Settings</strong>"
+msgstr "<b>הגדרות עמוד ועמוד הבית</b>"
+
+# @ autoa
+#: admin/admin-area.php:84
+#, fuzzy
+msgid "Show on Categories"
+msgstr "הצג בעמודים"
+
+# @ autoa
+#: admin/admin-area.php:85
+#, fuzzy
+msgid ""
+"If you set this settings \"Yes\", attachments shown on category and single "
+"pages. If not attachments shown only in posts"
+msgstr ""
+"סימון של אפשרות זו יאפשר קבצים מצורפים בעמודים ועמוד הבית. אחרת, קבצים "
+"מצורפים יופיעו רק בפוסטים."
+
+# @ autoa
+#: admin/admin-area.php:87 admin/admin-area.php:94 admin/admin-area.php:105
+#: admin/admin-area.php:122 admin/admin-area.php:150 admin/admin-area.php:157
+msgid "Yes"
+msgstr "כן"
+
+# @ autoa
+#: admin/admin-area.php:89 admin/admin-area.php:96 admin/admin-area.php:107
+#: admin/admin-area.php:124 admin/admin-area.php:152 admin/admin-area.php:159
+msgid "No"
+msgstr "לא"
+
+# @ autoa
+#: admin/admin-area.php:91
+msgid "Show on Homepage"
+msgstr "הצג בעמוד הראשי"
+
+# @ autoa
+#: admin/admin-area.php:92
+msgid ""
+"If you set this settings \"Yes\", attachments shown on homepage and single "
+"pages. If not attachments shown only in posts"
+msgstr ""
+"סימון של אפשרות זו יאפשר קבצים מצורפים בעמודים ועמוד הבית. אחרת, קבצים "
+"מצורפים יופיעו רק בפוסטים."
+
+# @ autoa
+#: admin/admin-area.php:100
+msgid "<strong>Gallery Settings</strong>"
+msgstr "<b>אפשרויות גלריה</b>"
+
+# @ autoa
+#: admin/admin-area.php:102
+msgid "Show Gallery?"
+msgstr "הצג גלריה?"
+
+# @ autoa
+#: admin/admin-area.php:103
+msgid ""
+"You can use gallery for show your image attachments without any plugin or "
+"else :) Also if you use colorbox or any other gallery lihtbox plugin yopu "
+"can disable colorbox usage."
+msgstr ""
+"תוסף זה מאפשר ליצור גלריה יפה של קבצי התמונה המצורפים. אם התקנת colorbox או "
+"תוסף אחר מבוסס lightbox - אין בו צורך."
+
+# @ autoa
+#: admin/admin-area.php:108
+msgid "Select Gallery Color Style"
+msgstr "בחירת סגנון הגלריה"
+
+# @ autoa
+#: admin/admin-area.php:120
+msgid "Use Slimbox?"
+msgstr "שימוש ב slimbox לתצוגה יפה של התמונות?"
+
+# @ autoa
+#: admin/admin-area.php:125
+msgid "Select Slimbox Color Style"
+msgstr "בחירת סגנון slimbox"
+
+# @ autoa
+#: admin/admin-area.php:138
+msgid "Gallery Thumb Size?"
+msgstr "גודל התמונות המוקטנות בגלריה?"
+
+# @ autoa
+#: admin/admin-area.php:139 admin/admin-area.php:141 admin/admin-area.php:162
+#: admin/admin-area.php:191
+msgid "Width"
+msgstr "רוחב"
+
+# @ autoa
+#: admin/admin-area.php:139 admin/admin-area.php:141 admin/admin-area.php:162
+#: admin/admin-area.php:191
+msgid "Height"
+msgstr "גובה"
+
+# @ autoa
+#: admin/admin-area.php:140
+msgid "Gallery Big Image Size?"
+msgstr "גודל התמונה הגדולה בגלריה?"
+
+# @ autoa
+#: admin/admin-area.php:144
+msgid "<strong>Misc. Settings</strong>"
+msgstr "<b>אפשרויות כלליות</b>"
+
+# @ autoa
+#: admin/admin-area.php:146
+msgid "List View Of Files"
+msgstr "תצוגת רשימה של קבצים"
+
+# @ autoa
+#: admin/admin-area.php:147
+msgid ""
+"If you activate this option your downloadable files seen in a list view."
+msgstr ""
+"כשאפשרות זו נבחרת תוצג רשימה מסודרת של הקבצים להורדה. אחרת יופיעו אייקונים."
+
+# @ autoa
+#: admin/admin-area.php:154
+msgid "Open files in new window?"
+msgstr "פתיחת הקבצים בחלון חדש?"
+
+# @ autoa
+#: admin/admin-area.php:155
+msgid "Do you want to open files in new window?."
+msgstr "האם לפתוח את הקבצים בחלון דפדפן חדש?"
+
+# @ autoa
+#: admin/admin-area.php:161
+msgid "File Icon Size?"
+msgstr "גודל אייקון הקובץ?"
+
+# @ autoa
+#: admin/admin-area.php:163
+msgid "Jw Player Skin"
+msgstr "סגנון נגן המוסיקה/וידאו Jw"
+
+# @ autoa
+#: admin/admin-area.php:165
+msgid "You can select JW Player Skin."
+msgstr "אפשר להחליף את מראה נגן מוסיקה/וידאו Jw"
+
+# @ autoa
+#: admin/admin-area.php:189
+msgid "Jw Player Dimensions?"
+msgstr "גודל נגן המוסיקה/וידאו Jw?"
+
+# @ autoa
+#: admin/admin-area.php:190
+msgid ""
+"This dimensions actually for video player. Mp3 player will use only width."
+msgstr "הגודל הוא עבור וידאו בלבד. קבצי מוסיקה Mp3 זקוקים רק לרוחב."
+
+# @ default
+#: admin/admin-area.php:195
+msgid "Save Changes"
+msgstr ""
+
+# @ autoa
+#: admin/metaboxes.php:12
+msgid "Show Auto Attachments?"
+msgstr "הצג קבצים מצורפים אוטומטית?"
+
+# @ autoa
+#: admin/metaboxes.php:26
+msgid "If you want to show Auto Attachments on this page Check This Check Box"
+msgstr ""
+"אם ברצונך שיראו את הקבצים המצורפים (שצורפו באמצעות פלאגין זה) נא לסמן את "
+"התיבה."
+
+# @ autoa
+#: admin/metaboxes.php:28
+msgid "I Want to Show"
+msgstr "ברצוני להציג"
+
+# @ autoa
+#: admin/rebuild.php:12
 msgid "Regen. Thumbnails"
 msgstr "רענון תמונות"
 
-#: auto-attachments.php:202
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:19
 msgid "Regenerate Thumbnail"
 msgstr "צור מחדש תמונות מוקטנות"
 
-#: auto-attachments.php:214
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:31
 msgid "Reading attachments..."
 msgstr "קורא קבצים מצורפים..."
 
-#: auto-attachments.php:235
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:52
 msgid "No attachments found."
 msgstr "אין קבצים מצורפים."
 
-#: auto-attachments.php:243
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:60
 msgid "Done."
 msgstr "בוצע."
 
-#: auto-attachments.php:246
+# @ autoa
+#: admin/rebuild.php:63
 #, php-format
-#@ autoa
 msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
 msgstr "\"בונה מחדש \" + %s + \" מתוך \" + %s + \" (\" + %s + \")...\""
 
-#: auto-attachments.php:265
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:82
 msgid "Error"
 msgstr "תקלה"
 
-#: auto-attachments.php:282
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:99
 msgid "Select which thumbnails you want to rebuild"
 msgstr "אילו תמונות ברצונך לרענן?"
 
-#: auto-attachments.php:283
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:100
 msgid "Toggle all"
 msgstr "בחר הכל"
 
-#: auto-attachments.php:289
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:106
 msgid "cropped"
 msgstr "חתוך"
 
-#: auto-attachments.php:297
-#@ autoa
-msgid "Note: If you've changed the dimensions of your thumbnails, existing thumbnail images will not be deleted."
-msgstr "אם שינית את גודל התמונות המוקטנות, התמונות שכבר הוקטנו ישארו כרגע באותו גודל. יש להשתמש ברענון תמונות כדי לתקן זאת."
+# @ autoa
+#: admin/rebuild.php:114
+msgid ""
+"Note: If you've changed the dimensions of your thumbnails, existing "
+"thumbnail images will not be deleted."
+msgstr ""
+"אם שינית את גודל התמונות המוקטנות, התמונות שכבר הוקטנו ישארו כרגע באותו "
+"גודל. יש להשתמש ברענון תמונות כדי לתקן זאת."
 
-#: auto-attachments.php:301
-#@ autoa
+# @ autoa
+#: admin/rebuild.php:118
 msgid "Rebuild All Thumbnails"
 msgstr "רענון כל התמונות המוקטנות"
 
+# @ autoa
+#: admin/shortcodes.php:11 admin/shortcodes.php:12 admin/shortcodes.php:18
+#, fuzzy
+msgid "Auto Attachments Shortcodes"
+msgstr "קבצים מצורפים אוטומטית"
+
+# @ autoa
+#: admin/shortcodes.php:19
+#, fuzzy
+msgid "Create New Auto Attachments Shortcode"
+msgstr "הצג קבצים מצורפים אוטומטית?"
+
+#: admin/shortcodes.php:20
+msgid "Files Already Loaded"
+msgstr ""
+
+#: admin/shortcodes.php:20
+msgid "If you don't see any file name and id press label of selectbox"
+msgstr ""
+
+#: admin/shortcodes.php:21
+msgid "Image"
+msgstr ""
+
+#: admin/shortcodes.php:22
+msgid "No Image"
+msgstr ""
+
+#: admin/shortcodes.php:23
+msgid "Audio"
+msgstr ""
+
+#: admin/shortcodes.php:24
+msgid "No Audio"
+msgstr ""
+
+#: admin/shortcodes.php:25
+msgid "Video"
+msgstr ""
+
+#: admin/shortcodes.php:26
+msgid "No Video"
+msgstr ""
+
+#: admin/shortcodes.php:27
+msgid "File"
+msgstr ""
+
+#: admin/shortcodes.php:28
+msgid "No File"
+msgstr ""
+
+#: admin/shortcodes.php:33
+msgid "Shortcode For"
+msgstr ""
+
+#: admin/shortcodes.php:34
+msgid "Item Id(s)"
+msgstr ""
+
+#: admin/shortcodes.php:36 admin/shortcodes.php:71
+msgid "Description"
+msgstr ""
+
+#: admin/shortcodes.php:41
+msgid "Image(s)"
+msgstr ""
+
+#: admin/shortcodes.php:43 admin/shortcodes.php:49 admin/shortcodes.php:55
+#: admin/shortcodes.php:61 admin/shortcodes.php:76
+msgid "Create"
+msgstr ""
+
+#: admin/shortcodes.php:44
+msgid ""
+"Enter the <strong>Ids</strong> (comma seperated) of image(s) here. "
+"<strong>Image selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:47
+msgid "File(s)"
+msgstr ""
+
+#: admin/shortcodes.php:50
+msgid ""
+"Enter the Ids (comma seperated) of file(s) here. <strong>File selectbox</"
+"strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:53
+msgid "Audio(s)"
+msgstr ""
+
+#: admin/shortcodes.php:56
+msgid ""
+"Enter the Ids (comma seperated) of aufido file(s) here. <strong>Audio "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:59
+msgid "Video(s)"
+msgstr ""
+
+#: admin/shortcodes.php:62
+msgid ""
+"Enter the Ids (comma seperated) of video file(s) here. <strong>Video "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:67
+msgid "Usage"
+msgstr ""
+
+#: admin/shortcodes.php:71
+msgid "Situation"
+msgstr ""
+
+#: admin/shortcodes.php:76
+msgid ""
+"For create any shortcode, please add ids with comma to text areas. When you "
+"press <strong>Create</strong> button, plugin will create a shortcode and an "
+"exclude code for show files properly."
+msgstr ""
+
+#: admin/shortcodes.php:79
+msgid "Clear"
+msgstr ""
+
+#: admin/shortcodes.php:79
+msgid ""
+"For clear, Wipe text area and press <strong>Create</strong> button. This "
+"will clear exclude code from your post but you will still have shortcode. "
+"You can delete shortcode from your content. Shortcode will show your items "
+"properly, but this may duplicate files (in after content area)."
+msgstr ""

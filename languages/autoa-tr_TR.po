@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Auto Attachments\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-24 06:55+0200\n"
-"PO-Revision-Date: 2013-01-24 06:55+0200\n"
+"POT-Creation-Date: 2013-02-12 11:34+0200\n"
+"PO-Revision-Date: 2013-02-12 11:40+0200\n"
 "Last-Translator: Serkan Algur <info@kaisercrazy.com>\n"
 "Language-Team: kaisercrazy <info@kaisercrazy>\n"
 "Language: en_TR\n"
@@ -13,172 +13,108 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: F:\\Plugins\\auto-attachments\\trunk\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:162
+#: ../auto-attachments.php:167
 msgid "Auto Attachments"
 msgstr "Auto Attachments"
 
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:180
+#: ../auto-attachments.php:185
 #, fuzzy
 msgid "Settings saved."
 msgstr "Ayarlar Kaydedildi."
 
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:196
-msgid "Regen. Thumbnails"
-msgstr "Resim boyutlandırma"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:203
-msgid "Regenerate Thumbnail"
-msgstr "Resimleri yeniden oluştur"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:215
-msgid "Reading attachments..."
-msgstr "Eklentiler okunuyor"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:236
-msgid "No attachments found."
-msgstr "Eklenti bulunamadı."
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:244
-msgid "Done."
-msgstr "Tamamlandı."
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:247
-#, php-format
-msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
-msgstr "\"Oluşturuluyor \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:266
-msgid "Error"
-msgstr "Hata"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:283
-msgid "Select which thumbnails you want to rebuild"
-msgstr "Boyutlandırmak istediğiniz resim boyutlarını seçin"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:284
-msgid "Toggle all"
-msgstr "Hepsini Seç"
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:290
-msgid "cropped"
-msgstr ""
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:298
-msgid ""
-"Note: If you've changed the dimensions of your thumbnails, existing "
-"thumbnail images will not be deleted."
-msgstr ""
-"Not: Resim boyutlarını değiştirirseniz varolan resimleriniz ve orjinal "
-"dosyalar silinmeyecektir."
-
-#: F:\Plugins\auto-attachments\trunk/auto-attachments.php:302
-msgid "Rebuild All Thumbnails"
-msgstr "Tüm resimleri boyutlandır"
-
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:13
+#: ../admin/admin-area.php:13
 msgid "Auto Attachments Settings Page"
 msgstr "Auto Attachments Seçenek Sayfası"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:18
+#: ../admin/admin-area.php:18
 msgid "Contributor"
 msgstr "Eklenti Sahibi"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:23
+#: ../admin/admin-area.php:23
 msgid "Personal Blog (Turkish)"
 msgstr "Kişisel Blog (Türkçe)"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:24
+#: ../admin/admin-area.php:24
 msgid "WpFunC (functions share)"
 msgstr "WpFunC (İngilizce)"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:25
+#: ../admin/admin-area.php:25
 msgid "Facebook"
 msgstr "Facebook"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:27
+#: ../admin/admin-area.php:27
 msgid "Friendfeed"
 msgstr "Friendfeed"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:28
+#: ../admin/admin-area.php:28
 msgid "Email Me"
 msgstr "E-Posta Gönder"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:34
+#: ../admin/admin-area.php:34
 msgid "Preview"
 msgstr "Önizleme"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:55
+#: ../admin/admin-area.php:55
 msgid "<strong>Header Text Settings</strong>"
 msgstr "<strong>Üst Başlık Seçenekleri</strong>"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:57
+#: ../admin/admin-area.php:57
 msgid ""
 "You can now change <strong>Header Texts</strong> from here. You can localize "
 "to your language :)"
 msgstr ""
 "Aşağıdaki üst bilgi alanlarına istediğiniz herhangi birşeyi yazabilirsiniz."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:58
+#: ../admin/admin-area.php:58
 msgid "Add Header Text for Mp3 Files:"
 msgstr "MP3 dosyaları için Üst Bilgi Gir :"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:59
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:61
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:67
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:69
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:74
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:76
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:86
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:88
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:93
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:95
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:104
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:106
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:121
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:123
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:149
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:151
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:156
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:158
-#: F:\Plugins\auto-attachments\trunk/admin/metaboxes.php:27
+#: ../admin/admin-area.php:59 ../admin/admin-area.php:61
+#: ../admin/admin-area.php:67 ../admin/admin-area.php:69
+#: ../admin/admin-area.php:74 ../admin/admin-area.php:76
+#: ../admin/admin-area.php:86 ../admin/admin-area.php:88
+#: ../admin/admin-area.php:93 ../admin/admin-area.php:95
+#: ../admin/admin-area.php:104 ../admin/admin-area.php:106
+#: ../admin/admin-area.php:121 ../admin/admin-area.php:123
+#: ../admin/admin-area.php:149 ../admin/admin-area.php:151
+#: ../admin/admin-area.php:156 ../admin/admin-area.php:158
+#: ../admin/metaboxes.php:27
 msgid "checked=\"checked\""
 msgstr ""
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:60
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:68
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:75
+#: ../admin/admin-area.php:60 ../admin/admin-area.php:68
+#: ../admin/admin-area.php:75
 msgid "Show"
 msgstr "Göster"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:62
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:70
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:77
+#: ../admin/admin-area.php:62 ../admin/admin-area.php:70
+#: ../admin/admin-area.php:77
 msgid "Hide"
 msgstr "Gizle"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:66
+#: ../admin/admin-area.php:66
 msgid "Add Header Text for Video Files:"
 msgstr "Video dosyaları için Üst Bilgi Gir:"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:73
+#: ../admin/admin-area.php:73
 msgid "Title Before Attachments:"
 msgstr "Eklerden Önceki Başlık: "
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:78
+#: ../admin/admin-area.php:78
 msgid "HTML Accepted"
 msgstr "HTML Kullanabilirsiniz"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:82
+#: ../admin/admin-area.php:82
 msgid "<strong>Page & Homepage Settings</strong>"
 msgstr "<strong>Sayfa ve Anasayfa Seçenekleri</strong>"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:84
+#: ../admin/admin-area.php:84
 msgid "Show on Categories"
 msgstr "Kategorilerde Göster"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:85
+#: ../admin/admin-area.php:85
 msgid ""
 "If you set this settings \"Yes\", attachments shown on category and single "
 "pages. If not attachments shown only in posts"
@@ -186,29 +122,23 @@ msgstr ""
 "Eğer bu seçeneği \"Evet\" olarak düzenlerseniz ekler kategorilerde "
 "görünebilecek. İşaretlemezseniz görünmeyecek."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:87
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:94
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:105
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:122
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:150
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:157
+#: ../admin/admin-area.php:87 ../admin/admin-area.php:94
+#: ../admin/admin-area.php:105 ../admin/admin-area.php:122
+#: ../admin/admin-area.php:150 ../admin/admin-area.php:157
 msgid "Yes"
 msgstr "Evet"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:89
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:96
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:107
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:124
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:152
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:159
+#: ../admin/admin-area.php:89 ../admin/admin-area.php:96
+#: ../admin/admin-area.php:107 ../admin/admin-area.php:124
+#: ../admin/admin-area.php:152 ../admin/admin-area.php:159
 msgid "No"
 msgstr "Hayır"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:91
+#: ../admin/admin-area.php:91
 msgid "Show on Homepage"
 msgstr "Ansayfada Göster"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:92
+#: ../admin/admin-area.php:92
 msgid ""
 "If you set this settings \"Yes\", attachments shown on homepage and single "
 "pages. If not attachments shown only in posts"
@@ -216,15 +146,15 @@ msgstr ""
 "Eğer bu seçeneği \"Evet\" olarak düzenlerseniz ekler anasayfada "
 "görünebilecek. İşaretlemezseniz görünmeyecek."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:100
+#: ../admin/admin-area.php:100
 msgid "<strong>Gallery Settings</strong>"
 msgstr "<strong>Galeri Seçenekleri</strong>"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:102
+#: ../admin/admin-area.php:102
 msgid "Show Gallery?"
 msgstr "Galeriyi Göster?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:103
+#: ../admin/admin-area.php:103
 msgid ""
 "You can use gallery for show your image attachments without any plugin or "
 "else :) Also if you use colorbox or any other gallery lihtbox plugin yopu "
@@ -234,100 +164,299 @@ msgstr ""
 "kullanabilirsiniz. Colorbox veya diğer resim görüntüleme eklentilerini "
 "kullanıyorsanız colorbox kullanımını iptal edebilirsiniz."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:108
+#: ../admin/admin-area.php:108
 msgid "Select Gallery Color Style"
 msgstr "Galeri Renk şeması seç"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:120
+#: ../admin/admin-area.php:120
 msgid "Use Slimbox?"
 msgstr "Slimbox Kullan?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:125
+#: ../admin/admin-area.php:125
 msgid "Select Slimbox Color Style"
 msgstr "Slimbox Renk şeması seç"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:138
+#: ../admin/admin-area.php:138
 msgid "Gallery Thumb Size?"
 msgstr "Galeri Küçük resim Boyutu?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:139
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:141
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:162
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:191
+#: ../admin/admin-area.php:139 ../admin/admin-area.php:141
+#: ../admin/admin-area.php:162 ../admin/admin-area.php:191
 msgid "Width"
 msgstr "Genişlik"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:139
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:141
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:162
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:191
+#: ../admin/admin-area.php:139 ../admin/admin-area.php:141
+#: ../admin/admin-area.php:162 ../admin/admin-area.php:191
 msgid "Height"
 msgstr "Yükseklik"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:140
+#: ../admin/admin-area.php:140
 msgid "Gallery Big Image Size?"
 msgstr "Galeri Büyük resim Boyutu?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:144
+#: ../admin/admin-area.php:144
 msgid "<strong>Misc. Settings</strong>"
 msgstr "<strong>Diğer Seçenekler</strong>"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:146
+#: ../admin/admin-area.php:146
 msgid "List View Of Files"
 msgstr "Dosyaların Liste Halinde Görünmesi"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:147
+#: ../admin/admin-area.php:147
 msgid ""
 "If you activate this option your downloadable files seen in a list view."
 msgstr "Bunu aktif ederseniz indirilebilir dosyalar liste halinde görünecek"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:154
+#: ../admin/admin-area.php:154
 msgid "Open files in new window?"
 msgstr "Dosyalar Yeni pencerede açılsın mı?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:155
+#: ../admin/admin-area.php:155
 msgid "Do you want to open files in new window?."
 msgstr "Dosyaların yeni pencerede açılmasını istriyor musunuz?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:161
+#: ../admin/admin-area.php:161
 msgid "File Icon Size?"
 msgstr "Dosya ikon boyutu?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:163
+#: ../admin/admin-area.php:163
 msgid "Jw Player Skin"
 msgstr "JW Player Temaları"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:165
+#: ../admin/admin-area.php:165
 msgid "You can select JW Player Skin."
 msgstr "JW Player teması seçebilirsiniz."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:189
+#: ../admin/admin-area.php:189
 msgid "Jw Player Dimensions?"
 msgstr "JW Player Boyutları"
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:190
+#: ../admin/admin-area.php:190
 msgid ""
 "This dimensions actually for video player. Mp3 player will use only width."
 msgstr ""
 "Bu boyutlar genel anlamda video oynatıcı için. Mp3 çalar sadece genişliği "
 "kullanacak."
 
-#: F:\Plugins\auto-attachments\trunk/admin/admin-area.php:195
+#: ../admin/admin-area.php:195
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
-#: F:\Plugins\auto-attachments\trunk/admin/metaboxes.php:12
+#: ../admin/metaboxes.php:12
 msgid "Show Auto Attachments?"
 msgstr "Auto Attachmentsi Göster?"
 
-#: F:\Plugins\auto-attachments\trunk/admin/metaboxes.php:26
+#: ../admin/metaboxes.php:26
 msgid "If you want to show Auto Attachments on this page Check This Check Box"
 msgstr ""
 "Auto Attachmentsi sayfanıza kullanmak için aşağıdaki kutucuğu işaretleyin"
 
-#: F:\Plugins\auto-attachments\trunk/admin/metaboxes.php:28
+#: ../admin/metaboxes.php:28
 msgid "I Want to Show"
 msgstr "Göster"
+
+#: ../admin/rebuild.php:12
+msgid "Regen. Thumbnails"
+msgstr "Resim boyutlandırma"
+
+#: ../admin/rebuild.php:19
+msgid "Regenerate Thumbnail"
+msgstr "Resimleri yeniden oluştur"
+
+#: ../admin/rebuild.php:31
+msgid "Reading attachments..."
+msgstr "Eklentiler okunuyor"
+
+#: ../admin/rebuild.php:52
+msgid "No attachments found."
+msgstr "Eklenti bulunamadı."
+
+#: ../admin/rebuild.php:60
+msgid "Done."
+msgstr "Tamamlandı."
+
+#: ../admin/rebuild.php:63
+#, php-format
+msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
+msgstr "\"Oluşturuluyor \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
+
+#: ../admin/rebuild.php:82
+msgid "Error"
+msgstr "Hata"
+
+#: ../admin/rebuild.php:99
+msgid "Select which thumbnails you want to rebuild"
+msgstr "Boyutlandırmak istediğiniz resim boyutlarını seçin"
+
+#: ../admin/rebuild.php:100
+msgid "Toggle all"
+msgstr "Hepsini Seç"
+
+#: ../admin/rebuild.php:106
+msgid "cropped"
+msgstr ""
+
+#: ../admin/rebuild.php:114
+msgid ""
+"Note: If you've changed the dimensions of your thumbnails, existing "
+"thumbnail images will not be deleted."
+msgstr ""
+"Not: Resim boyutlarını değiştirirseniz varolan resimleriniz ve orjinal "
+"dosyalar silinmeyecektir."
+
+#: ../admin/rebuild.php:118
+msgid "Rebuild All Thumbnails"
+msgstr "Tüm resimleri boyutlandır"
+
+#: ../admin/shortcodes.php:11 ../admin/shortcodes.php:12
+#: ../admin/shortcodes.php:18
+msgid "Auto Attachments Shortcodes"
+msgstr "Auto Attachments Kısa Kodları"
+
+#: ../admin/shortcodes.php:19
+msgid "Create New Auto Attachments Shortcode"
+msgstr "Yeni Auto Attachments Kısa Kod Oluştur"
+
+#: ../admin/shortcodes.php:20
+msgid "Files Already Loaded"
+msgstr "Yazıya Eklenen Dosyalar"
+
+#: ../admin/shortcodes.php:20
+msgid "If you don't see any file name and id press label of selectbox"
+msgstr "Eğer seçim kutuları boşsa yanındaki isimlere tıklayınız."
+
+#: ../admin/shortcodes.php:21
+msgid "Image"
+msgstr "Resim"
+
+#: ../admin/shortcodes.php:22
+msgid "No Image"
+msgstr "Resim Yok"
+
+#: ../admin/shortcodes.php:23
+msgid "Audio"
+msgstr "Ses"
+
+#: ../admin/shortcodes.php:24
+msgid "No Audio"
+msgstr "Ses Yok"
+
+#: ../admin/shortcodes.php:25
+msgid "Video"
+msgstr "Video"
+
+#: ../admin/shortcodes.php:26
+msgid "No Video"
+msgstr "Video Yok"
+
+#: ../admin/shortcodes.php:27
+msgid "File"
+msgstr "Dosya"
+
+#: ../admin/shortcodes.php:28
+msgid "No File"
+msgstr "Dosya Yok"
+
+#: ../admin/shortcodes.php:33
+msgid "Shortcode For"
+msgstr "Kısa kod"
+
+#: ../admin/shortcodes.php:34
+msgid "Item Id(s)"
+msgstr "Bileşen Idleri"
+
+#: ../admin/shortcodes.php:36 ../admin/shortcodes.php:71
+msgid "Description"
+msgstr "Açıklama"
+
+#: ../admin/shortcodes.php:41
+msgid "Image(s)"
+msgstr "Resim"
+
+#: ../admin/shortcodes.php:43 ../admin/shortcodes.php:49
+#: ../admin/shortcodes.php:55 ../admin/shortcodes.php:61
+#: ../admin/shortcodes.php:76
+msgid "Create"
+msgstr "Oluştur"
+
+#: ../admin/shortcodes.php:44
+msgid ""
+"Enter the <strong>Ids</strong> (comma seperated) of image(s) here. "
+"<strong>Image selectbox</strong> shows which files loaded in this post."
+msgstr ""
+"Resim dosyalarının idlerini girin (virgülle ayırın). Idlere yukarıdaki "
+"<strong>Resim seçim kutusundan</strong> ulaşabilirsiniz."
+
+#: ../admin/shortcodes.php:47
+msgid "File(s)"
+msgstr "Dosya"
+
+#: ../admin/shortcodes.php:50
+msgid ""
+"Enter the Ids (comma seperated) of file(s) here. <strong>File selectbox</"
+"strong> shows which files loaded in this post."
+msgstr ""
+"Dosyalarının idlerini girin (virgülle ayırın). Idlere yukarıdaki "
+"<strong>Dosya seçim kutusundan</strong> ulaşabilirsiniz."
+
+#: ../admin/shortcodes.php:53
+msgid "Audio(s)"
+msgstr "Ses"
+
+#: ../admin/shortcodes.php:56
+msgid ""
+"Enter the Ids (comma seperated) of aufido file(s) here. <strong>Audio "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+"Ses dosyalarının idlerini girin (virgülle ayırın). Idlere yukarıdaki "
+"<strong>Ses seçim kutusundan</strong> ulaşabilirsiniz."
+
+#: ../admin/shortcodes.php:59
+msgid "Video(s)"
+msgstr "Video"
+
+#: ../admin/shortcodes.php:62
+msgid ""
+"Enter the Ids (comma seperated) of video file(s) here. <strong>Video "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+"Video dosyalarının idlerini girin (virgülle ayırın). Idlere yukarıdaki "
+"<strong>Video seçim kutusundan</strong> ulaşabilirsiniz."
+
+#: ../admin/shortcodes.php:67
+msgid "Usage"
+msgstr "Kullanım"
+
+#: ../admin/shortcodes.php:71
+msgid "Situation"
+msgstr "Durum"
+
+#: ../admin/shortcodes.php:76
+msgid ""
+"For create any shortcode, please add ids with comma to text areas. When you "
+"press <strong>Create</strong> button, plugin will create a shortcode and an "
+"exclude code for show files properly."
+msgstr ""
+"Herhangi bir kısa kod oluşturmak için text alanlarına idleri girin ve "
+"<strong>Oluştur</strong> butonuna basın. Bu buton hem kısa kodu oluşturacak, "
+"hem de gösterimler için bir ayrılma kodu yaratacaktır."
+
+#: ../admin/shortcodes.php:79
+msgid "Clear"
+msgstr "Temizlemek"
+
+#: ../admin/shortcodes.php:79
+msgid ""
+"For clear, Wipe text area and press <strong>Create</strong> button. This "
+"will clear exclude code from your post but you will still have shortcode. "
+"You can delete shortcode from your content. Shortcode will show your items "
+"properly, but this may duplicate files (in after content area)."
+msgstr ""
+"Temizlemek için, sadece ilgili text alanını silin ve <strong>Oluştur</"
+"strong> butonuna basın. Bu oluşturulan ayrılma kodunu silecektir. Kısa "
+"kodunuz hala kullanılabilir olacaktır. İsterseniz içeriğinizden "
+"silebilirsiniz. Silmediğiniz zaman yazının sonunda görünen kısımda da içerik "
+"görüneceğinden çift gösterim yaratabilir."
 
 #~ msgid ""
 #~ "With 0.6, you will have a meta box on WordPress page editing area about "

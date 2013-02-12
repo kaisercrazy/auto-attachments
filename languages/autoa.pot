@@ -1,14 +1,14 @@
-# Copyright (C) 2012 Auto Attachments
+# Copyright (C) 2013 Auto Attachments
 # This file is distributed under the same license as the Auto Attachments package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto Attachments 0.6.3\n"
+"Project-Id-Version: Auto Attachments 0.7\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/auto-attachments\n"
-"POT-Creation-Date: 2012-12-07 19:44:50+00:00\n"
+"POT-Creation-Date: 2013-02-12 10:18:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -60,10 +60,11 @@ msgstr ""
 
 #: admin/admin-area.php:59 admin/admin-area.php:61 admin/admin-area.php:67
 #: admin/admin-area.php:69 admin/admin-area.php:74 admin/admin-area.php:76
-#: admin/admin-area.php:88 admin/admin-area.php:90 admin/admin-area.php:99
-#: admin/admin-area.php:101 admin/admin-area.php:116 admin/admin-area.php:118
-#: admin/admin-area.php:144 admin/admin-area.php:146 admin/admin-area.php:151
-#: admin/admin-area.php:153 admin/metaboxes.php:27
+#: admin/admin-area.php:86 admin/admin-area.php:88 admin/admin-area.php:93
+#: admin/admin-area.php:95 admin/admin-area.php:104 admin/admin-area.php:106
+#: admin/admin-area.php:121 admin/admin-area.php:123 admin/admin-area.php:149
+#: admin/admin-area.php:151 admin/admin-area.php:156 admin/admin-area.php:158
+#: admin/metaboxes.php:27
 msgid "checked=\"checked\""
 msgstr ""
 
@@ -92,123 +93,123 @@ msgid "<strong>Page & Homepage Settings</strong>"
 msgstr ""
 
 #: admin/admin-area.php:84
-msgid "Show on Pages"
+msgid "Show on Categories"
 msgstr ""
 
 #: admin/admin-area.php:85
 msgid ""
-"With 0.6, you will have a meta box on WordPress page editing area about "
-"\"Show on Pages\" Setting. This notice will be delete with new version. "
+"If you set this settings \"Yes\", attachments shown on category and single "
+"pages. If not attachments shown only in posts"
 msgstr ""
 
-#: admin/admin-area.php:86
+#: admin/admin-area.php:87 admin/admin-area.php:94 admin/admin-area.php:105
+#: admin/admin-area.php:122 admin/admin-area.php:150 admin/admin-area.php:157
+msgid "Yes"
+msgstr ""
+
+#: admin/admin-area.php:89 admin/admin-area.php:96 admin/admin-area.php:107
+#: admin/admin-area.php:124 admin/admin-area.php:152 admin/admin-area.php:159
+msgid "No"
+msgstr ""
+
+#: admin/admin-area.php:91
 msgid "Show on Homepage"
 msgstr ""
 
-#: admin/admin-area.php:87
+#: admin/admin-area.php:92
 msgid ""
 "If you set this settings \"Yes\", attachments shown on homepage and single "
 "pages. If not attachments shown only in posts"
 msgstr ""
 
-#: admin/admin-area.php:89 admin/admin-area.php:100 admin/admin-area.php:117
-#: admin/admin-area.php:145 admin/admin-area.php:152
-msgid "Yes"
-msgstr ""
-
-#: admin/admin-area.php:91 admin/admin-area.php:102 admin/admin-area.php:119
-#: admin/admin-area.php:147 admin/admin-area.php:154
-msgid "No"
-msgstr ""
-
-#: admin/admin-area.php:95
+#: admin/admin-area.php:100
 msgid "<strong>Gallery Settings</strong>"
 msgstr ""
 
-#: admin/admin-area.php:97
+#: admin/admin-area.php:102
 msgid "Show Gallery?"
 msgstr ""
 
-#: admin/admin-area.php:98
+#: admin/admin-area.php:103
 msgid ""
 "You can use gallery for show your image attachments without any plugin or "
 "else :) Also if you use colorbox or any other gallery lihtbox plugin yopu "
 "can disable colorbox usage."
 msgstr ""
 
-#: admin/admin-area.php:103
+#: admin/admin-area.php:108
 msgid "Select Gallery Color Style"
 msgstr ""
 
-#: admin/admin-area.php:115
+#: admin/admin-area.php:120
 msgid "Use Slimbox?"
 msgstr ""
 
-#: admin/admin-area.php:120
+#: admin/admin-area.php:125
 msgid "Select Slimbox Color Style"
 msgstr ""
 
-#: admin/admin-area.php:133
+#: admin/admin-area.php:138
 msgid "Gallery Thumb Size?"
 msgstr ""
 
-#: admin/admin-area.php:134 admin/admin-area.php:136 admin/admin-area.php:157
-#: admin/admin-area.php:186
+#: admin/admin-area.php:139 admin/admin-area.php:141 admin/admin-area.php:162
+#: admin/admin-area.php:191
 msgid "Width"
 msgstr ""
 
-#: admin/admin-area.php:134 admin/admin-area.php:136 admin/admin-area.php:157
-#: admin/admin-area.php:186
+#: admin/admin-area.php:139 admin/admin-area.php:141 admin/admin-area.php:162
+#: admin/admin-area.php:191
 msgid "Height"
 msgstr ""
 
-#: admin/admin-area.php:135
+#: admin/admin-area.php:140
 msgid "Gallery Big Image Size?"
 msgstr ""
 
-#: admin/admin-area.php:139
+#: admin/admin-area.php:144
 msgid "<strong>Misc. Settings</strong>"
 msgstr ""
 
-#: admin/admin-area.php:141
+#: admin/admin-area.php:146
 msgid "List View Of Files"
 msgstr ""
 
-#: admin/admin-area.php:142
+#: admin/admin-area.php:147
 msgid ""
 "If you activate this option your downloadable files seen in a list view."
 msgstr ""
 
-#: admin/admin-area.php:149
+#: admin/admin-area.php:154
 msgid "Open files in new window?"
 msgstr ""
 
-#: admin/admin-area.php:150
+#: admin/admin-area.php:155
 msgid "Do you want to open files in new window?."
 msgstr ""
 
-#: admin/admin-area.php:156
+#: admin/admin-area.php:161
 msgid "File Icon Size?"
 msgstr ""
 
-#: admin/admin-area.php:158
+#: admin/admin-area.php:163
 msgid "Jw Player Skin"
 msgstr ""
 
-#: admin/admin-area.php:160
+#: admin/admin-area.php:165
 msgid "You can select JW Player Skin."
 msgstr ""
 
-#: admin/admin-area.php:184
+#: admin/admin-area.php:189
 msgid "Jw Player Dimensions?"
 msgstr ""
 
-#: admin/admin-area.php:185
+#: admin/admin-area.php:190
 msgid ""
 "This dimensions actually for video player. Mp3 player will use only width."
 msgstr ""
 
-#: admin/admin-area.php:190
+#: admin/admin-area.php:195
 msgid "Save Changes"
 msgstr ""
 
@@ -224,64 +225,196 @@ msgstr ""
 msgid "I Want to Show"
 msgstr ""
 
-#. #-#-#-#-#  plugin.pot (Auto Attachments 0.6.3)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
-#: auto-attachments.php:169
-msgid "Auto Attachments"
-msgstr ""
-
-#: auto-attachments.php:185
-msgid "Settings saved."
-msgstr ""
-
-#: auto-attachments.php:200
+#: admin/rebuild.php:12
 msgid "Regen. Thumbnails"
 msgstr ""
 
-#: auto-attachments.php:207
+#: admin/rebuild.php:19
 msgid "Regenerate Thumbnail"
 msgstr ""
 
-#: auto-attachments.php:219
+#: admin/rebuild.php:31
 msgid "Reading attachments..."
 msgstr ""
 
-#: auto-attachments.php:240
+#: admin/rebuild.php:52
 msgid "No attachments found."
 msgstr ""
 
-#: auto-attachments.php:248
+#: admin/rebuild.php:60
 msgid "Done."
 msgstr ""
 
-#: auto-attachments.php:251
+#: admin/rebuild.php:63
 msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
 msgstr ""
 
-#: auto-attachments.php:270
+#: admin/rebuild.php:82
 msgid "Error"
 msgstr ""
 
-#: auto-attachments.php:287
+#: admin/rebuild.php:99
 msgid "Select which thumbnails you want to rebuild"
 msgstr ""
 
-#: auto-attachments.php:288
+#: admin/rebuild.php:100
 msgid "Toggle all"
 msgstr ""
 
-#: auto-attachments.php:294
+#: admin/rebuild.php:106
 msgid "cropped"
 msgstr ""
 
-#: auto-attachments.php:302
+#: admin/rebuild.php:114
 msgid ""
 "Note: If you've changed the dimensions of your thumbnails, existing "
 "thumbnail images will not be deleted."
 msgstr ""
 
-#: auto-attachments.php:306
+#: admin/rebuild.php:118
 msgid "Rebuild All Thumbnails"
+msgstr ""
+
+#: admin/shortcodes.php:11 admin/shortcodes.php:12 admin/shortcodes.php:18
+msgid "Auto Attachments Shortcodes"
+msgstr ""
+
+#: admin/shortcodes.php:19
+msgid "Create New Auto Attachments Shortcode"
+msgstr ""
+
+#: admin/shortcodes.php:20
+msgid "Files Already Loaded"
+msgstr ""
+
+#: admin/shortcodes.php:20
+msgid "If you don't see any file name and id press label of selectbox"
+msgstr ""
+
+#: admin/shortcodes.php:21
+msgid "Image"
+msgstr ""
+
+#: admin/shortcodes.php:22
+msgid "No Image"
+msgstr ""
+
+#: admin/shortcodes.php:23
+msgid "Audio"
+msgstr ""
+
+#: admin/shortcodes.php:24
+msgid "No Audio"
+msgstr ""
+
+#: admin/shortcodes.php:25
+msgid "Video"
+msgstr ""
+
+#: admin/shortcodes.php:26
+msgid "No Video"
+msgstr ""
+
+#: admin/shortcodes.php:27
+msgid "File"
+msgstr ""
+
+#: admin/shortcodes.php:28
+msgid "No File"
+msgstr ""
+
+#: admin/shortcodes.php:33
+msgid "Shortcode For"
+msgstr ""
+
+#: admin/shortcodes.php:34
+msgid "Item Id(s)"
+msgstr ""
+
+#: admin/shortcodes.php:36 admin/shortcodes.php:71
+msgid "Description"
+msgstr ""
+
+#: admin/shortcodes.php:41
+msgid "Image(s)"
+msgstr ""
+
+#: admin/shortcodes.php:43 admin/shortcodes.php:49 admin/shortcodes.php:55
+#: admin/shortcodes.php:61 admin/shortcodes.php:76
+msgid "Create"
+msgstr ""
+
+#: admin/shortcodes.php:44
+msgid ""
+"Enter the <strong>Ids</strong> (comma seperated) of image(s) here. "
+"<strong>Image selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:47
+msgid "File(s)"
+msgstr ""
+
+#: admin/shortcodes.php:50
+msgid ""
+"Enter the Ids (comma seperated) of file(s) here. <strong>File selectbox</"
+"strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:53
+msgid "Audio(s)"
+msgstr ""
+
+#: admin/shortcodes.php:56
+msgid ""
+"Enter the Ids (comma seperated) of aufido file(s) here. <strong>Audio "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:59
+msgid "Video(s)"
+msgstr ""
+
+#: admin/shortcodes.php:62
+msgid ""
+"Enter the Ids (comma seperated) of video file(s) here. <strong>Video "
+"selectbox</strong> shows which files loaded in this post."
+msgstr ""
+
+#: admin/shortcodes.php:67
+msgid "Usage"
+msgstr ""
+
+#: admin/shortcodes.php:71
+msgid "Situation"
+msgstr ""
+
+#: admin/shortcodes.php:76
+msgid ""
+"For create any shortcode, please add ids with comma to text areas. When you "
+"press <strong>Create</strong> button, plugin will create a shortcode and an "
+"exclude code for show files properly."
+msgstr ""
+
+#: admin/shortcodes.php:79
+msgid "Clear"
+msgstr ""
+
+#: admin/shortcodes.php:79
+msgid ""
+"For clear, Wipe text area and press <strong>Create</strong> button. This "
+"will clear exclude code from your post but you will still have shortcode. "
+"You can delete shortcode from your content. Shortcode will show your items "
+"properly, but this may duplicate files (in after content area)."
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Auto Attachments 0.7)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: auto-attachments.php:167
+msgid "Auto Attachments"
+msgstr ""
+
+#: auto-attachments.php:185
+msgid "Settings saved."
 msgstr ""
 
 #. Plugin URI of the plugin/theme
