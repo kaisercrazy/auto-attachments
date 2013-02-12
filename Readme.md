@@ -51,8 +51,8 @@ Go to Auto Attachments => Gallery Settings from accordion and set Thumnbail & Bi
 **How i change file list type to multi-column (or reverse)**<br /> 
 Go to Auto Attachments => Misc. Settings and if you want to use multi-column list set yes "List view of Files" (default No).
 
-**How i create shortcodes **<br />
-Go to Posts (or Pages) -> Create New (or Edit). You will see a new button with a paperclip. Press this button and follow the instruction.
+**How i create shortcodes**<br />
+Go to **Posts (or Pages)** -> **Create New (or Edit)**. You will see a new **button with a paperclip**. Press this button and follow the instruction.
 
 ## Screenshots 
 
