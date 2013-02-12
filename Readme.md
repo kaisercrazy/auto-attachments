@@ -56,8 +56,8 @@ Go to Posts (or Pages) -> Create New (or Edit). You will see a new button with a
 
 ## Screenshots 
 
-![Çalışır Halde Görünüm / The Plugin area](http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-1.png?r=662447)
-![Yönetim Paneli / Admin Area] (http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-3.png?r=662447)
+![Çalışır Halde Görünüm / The Plugin area](http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-4.png)
+![Yönetim Paneli / Admin Area] (http://s.wordpress.org/extend/plugins/auto-attachments/screenshot-3.png)
 
 ## Changelog
 
